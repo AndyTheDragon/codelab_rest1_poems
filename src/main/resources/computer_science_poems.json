@@ -1,0 +1,44 @@
+{
+    "poems": [
+        {
+            "title": "Binary Beats",
+            "content": "Ones and zeros, marching tight,\nA dance of logic, black and white,\nCircuits hum where thoughts ignite,\nCode the dawn, command the night."
+        },
+        {
+            "title": "Bug Hunt",
+            "content": "A semicolon lost in endless lines,\nA missing bracket, oh what signs!\nDebugging late by screen's dull glow,\nThe curse and joy all coders know."
+        },
+        {
+            "title": "The Loop Eternal",
+            "content": "While passion burns, the code will spin,\nA loop without an end to win,\nWith breakpoints set and dreams in mind,\nThe answer waits for those who grind."
+        },
+        {
+            "title": "Gaming Realms",
+            "content": "Pixels dancing, worlds to roam,\nBoss fights lurking, far from home,\nRespawn ready, heart in chest,\nOnly those who fail the test."
+        },
+        {
+            "title": "The Compiler's Wrath",
+            "content": "You wrote with heart, the code was pure,\nSyntax perfect, logic sure,\nBut compilers scoff, their errors cruel \u2014\n\"Expected ';' \u2014 you broke the rule!\""
+        },
+        {
+            "title": "AI Awakens",
+            "content": "Neural nets that learn and dream,\nTraining minds in lines unseen,\nA future forged by coded art,\nMachine and man \u2014 not far apart."
+        },
+        {
+            "title": "Git Commit Regret",
+            "content": "A tiny tweak, the deadline near,\n\"Git commit\" \u2014 the coast was clear,\nNext day the build begins to break \u2014\nA lesson learned: just double-check."
+        },
+        {
+            "title": "Boss Fight: Final Level",
+            "content": "Joystick shaking, health bar low,\nFingers racing, heartbeats slow,\nOne last strike \u2014 the boss defeated!\nController dropped, the quest completed."
+        },
+        {
+            "title": "Hello, World!",
+            "content": "First line written, first dream sparked,\nA coder\u2019s journey proudly marked,\nFrom print to apps, from loops to light,\nA single line can change your life."
+        },
+        {
+            "title": "Game Dev Dreams",
+            "content": "From scratch to sprites, from code to play,\nWorlds unfolding night and day,\nIdeas pressed in digital streams,\nA player\u2019s joy \u2014 a dev's sweet dream."
+        }
+    ]
+}

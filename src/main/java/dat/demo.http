@@ -1,0 +1,27 @@
+GET localhost:7070/api/poem
+
+###
+GET localhost:7070/api/poem/3
+
+###
+POST localhost:7070/api/poem
+Content-Type: "application/json"
+
+{
+    "title": "Binary Beats",
+    "author": "ChatGPT",
+    "content": "Ones and zeros, marching tight,\nA dance of logic, black and white,\nCircuits hum where thoughts ignite,\nCode the dawn, command the night."
+}
+
+###
+PUT localhost:7070/api/poem/1
+Content-Type: "application/json"
+
+{
+    "title": "Bug Hunt",
+    "author": "ChatGPT",
+    "content": "A semicolon lost in endless lines,\nA missing bracket, oh what signs!\nDebugging late by screen's dull glow,\nThe curse and joy all coders know."
+}
+
+###
+DELETE localhost:7070/api/poem/1
