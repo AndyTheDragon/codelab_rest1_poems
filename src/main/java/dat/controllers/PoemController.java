@@ -7,11 +7,10 @@ import dat.entities.Poem;
 import io.javalin.http.Context;
 import jakarta.persistence.EntityManagerFactory;
 
-import java.util.List;
 
 public class PoemController
 {
-    private GenericDao genericDao;
+    private final GenericDao genericDao;
 
 
     public PoemController(EntityManagerFactory emf)

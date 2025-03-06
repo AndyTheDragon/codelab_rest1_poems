@@ -1,7 +1,5 @@
 package dat.utils;
 
-
-import com.fasterxml.jackson.databind.ObjectMapper;
 import dat.exceptions.APIException;
 
 import java.net.URI;
@@ -11,7 +9,6 @@ import java.net.http.HttpResponse;
 
 public class DataAPIReader
 {
-    private static ObjectMapper objectMapper = new ObjectMapper();
 
     public String getDataFromClient(String url)
     {
