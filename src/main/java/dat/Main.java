@@ -22,8 +22,8 @@ public class Main
                     get("/", poemController::getAll);
                     get("/{id}", poemController::getById);
                     post("/", poemController::create);
-                   put("/{id}", poemController::update);
-                   delete("/{id}", poemController::delete);
+                    put("/{id}", poemController::update);
+                    delete("/{id}", poemController::delete);
                 });
             });
 
