@@ -31,7 +31,7 @@ class GenericDaoTest
             t2 = new Poem("TestEntityB");
             em.getTransaction().begin();
                 em.createQuery("DELETE FROM Poem ").executeUpdate();
-                em.createNativeQuery("ALTER SEQUENCE testentity_id_seq RESTART WITH 1");
+                em.createNativeQuery("ALTER SEQUENCE poem_id_seq RESTART WITH 1");
                 em.persist(t1);
                 em.persist(t2);
             em.getTransaction().commit();
