@@ -1,0 +1,30 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+Main -> HibernateConfig: getEntityManagerFactory()
+HibernateConfig --> Main: emf
+Main -> ApplicationConfig: initiateServer()
+activate ApplicationConfig
+ApplicationConfig -> ApplicationConfig: config()
+ApplicationConfig --> Main
+deactivate ApplicationConfig
+Main -> Routes: Routes.getRoutes(emf)
+activate Routes
+Routes -> PoemController: new PoemController(emf)
+activate PoemController
+PoemController -> GenericDAO: getInstance(emf)
+activate GenericDAO
+GenericDAO -> GenericDAO
+GenericDAO --> PoemController
+deactivate GenericDAO
+PoemController --> Routes
+deactivate PoemController
+Routes -> Routes
+Routes --> Main
+deactivate Routes
+Main -> ApplicationConfig: setRoute()
+ApplicationConfig --> Main
+Main -> ApplicationConfig: startServer()
+ApplicationConfig --> Main
+
+@enduml
