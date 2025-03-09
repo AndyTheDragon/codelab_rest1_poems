@@ -2,6 +2,7 @@ package dat.controllers;
 
 import dat.config.ApplicationConfig;
 import dat.config.HibernateConfig;
+import dat.dto.PoemDTO;
 import dat.entities.Poem;
 import dat.routes.Routes;
 import io.restassured.RestAssured;
@@ -15,6 +16,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 class PoemResourceTest
 {
     private static EntityManagerFactory emf;
@@ -78,7 +80,7 @@ class PoemResourceTest
         Poem poem = new Poem("New poem", "Lorenzo", "hi hi hi hi hi hi");
         try
         {
-            String json = objectMapper.writeValueAsString(poem);
+            String json = objectMapper.writeValueAsString(new PoemDTO(poem));
             given().when()
                     .contentType("application/json")
                     .accept("application/json")
@@ -97,10 +99,10 @@ class PoemResourceTest
     @Test
     void update()
     {
-        Poem poem = new Poem(1L,"New poem2", "GPT", "hi hi hi hi hi hi");
+        Poem poem = new Poem("New poem2", "GPT", "hi hi hi hi hi hi");
         try
         {
-            String json = objectMapper.writeValueAsString(poem);
+            String json = objectMapper.writeValueAsString(new PoemDTO(poem));
             given().when()
                     .contentType("application/json")
                     .accept("application/json")
